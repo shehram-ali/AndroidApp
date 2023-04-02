@@ -32,33 +32,37 @@ public class Denominations extends AppCompatActivity {
             while (amt >= 100) {
                 r100 = amt / 100;
                 amt = amt % 100;
-                System.out.print("\nTotal Number Of 100 Rupees Notes : " + r100);
+
                 break;
             }
 
             while (amt >= 50) {
                 r50 = amt / 50;
                 amt = amt % 50;
-                System.out.print("\nTotal Number Of 50 Rupees Notes : " + r50);
+
                 break;
             }
 
             while (amt >= 10) {
                 r10 = amt / 10;
                 amt = amt % 10;
-                System.out.print("\nTotal Number Of 10 Rupees Notes Or Coin : " + r10);
+
                 break;
             }
 
             while (amt >= 1) {
                 r1 = amt / 1;
                 amt = amt % 1;
-                System.out.print("\nTotal Number Of 1 Rupees Note Or Coin : " + r1);
+
                 break;
             }
 
             count = r100 + r50+ r10 + r1;
-            System.out.print("\n\nTotal Number Of Notes Require : \n\n" + count);
+            res.setText("\nNo. of 100 : " + r100);
+            res.setText("\nNo. of 50 : " + r50);
+            res.setText("\nNo. of 10 : " + r10);
+            res.setText("\nNo. of 1 : " + r1);
+            res.setText("\nTotal No. Of Notes:" + count);
 
 
 
